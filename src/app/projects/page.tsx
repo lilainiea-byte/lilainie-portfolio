@@ -1,0 +1,30 @@
+import { projects } from "@/data/projects";
+import ProjectCard from "@/components/ProjectCard";
+
+export default function Projects() {
+  return (
+    <>
+      <section className="bg-lavender">
+        <div className="mx-auto max-w-6xl px-6 pt-16 pb-12 md:pt-24 md:pb-20">
+          <p className="font-script text-2xl text-ink mb-4">Selected work</p>
+          <h1
+            className="font-display uppercase text-terracotta leading-[0.9]"
+            style={{ fontSize: "clamp(3rem, 10vw, 7rem)" }}
+          >
+            PROJECTS
+          </h1>
+        </div>
+      </section>
+
+      <section className="bg-cream">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
