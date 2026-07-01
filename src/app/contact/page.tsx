@@ -73,7 +73,6 @@ export default function Contact() {
                   href={link.href}
                   target={link.external ? "_blank" : undefined}
                   rel={link.external ? "noopener noreferrer" : undefined}
-                  download={link.download}
                   className="flex items-center gap-3 px-4 py-3.5 bg-white/70 border border-border rounded-md text-sm font-body font-medium hover:border-border-strong transition-colors text-ink/50 [&>svg]:shrink-0"
                 >
                   {link.icon}
