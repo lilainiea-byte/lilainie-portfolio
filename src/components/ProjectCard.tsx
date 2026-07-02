@@ -184,8 +184,28 @@ export default function ProjectCard({ project }: { project: Project }) {
               {/* Additional files & images */}
               <div className="border-t border-border pt-5">
                 <p className="text-xs font-bold uppercase tracking-widest text-ink/40 mb-3">Additional Media</p>
-                {project.extraFiles?.length || project.extraImages?.length ? (
+                {project.extraFiles?.length || project.extraImages?.length || project.extraLinks?.length ? (
                   <div className="flex flex-col gap-3">
+                    {project.extraLinks?.map((link) => (
+                      <a
+                        key={link.url}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 group/file"
+                      >
+                        <span className="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded bg-ink/5 text-ink/40 group-hover/file:bg-terracotta group-hover/file:text-white transition-colors">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                          </svg>
+                        </span>
+                        <span className="text-sm text-ink-muted group-hover/file:text-terracotta transition-colors leading-tight">
+                          {link.label}
+                        </span>
+                      </a>
+                    ))}
                     {project.extraFiles?.map((file) => (
                       <a
                         key={file.url}

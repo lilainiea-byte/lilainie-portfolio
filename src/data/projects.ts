@@ -13,6 +13,7 @@ export type Project = {
   imagePosition?: string; // CSS object-position, e.g. "50% 40%"
   extraFiles?: { label: string; url: string }[]; // supplemental PDFs/docs shown in modal
   extraImages?: string[]; // supplemental image paths shown in modal
+  extraLinks?: { label: string; url: string }[]; // supplemental external links shown in modal
 };
 
 // Replace these with your real projects. Each card needs either a `link`
@@ -67,5 +68,8 @@ export const projects: Project[] = [
     category: "freelance",
     image: "/images/projects/ltl-logo.png",
     imagePosition: "50% 50%",
+    extraLinks: [
+      { label: "Instagram — @ltlforevr", url: "https://www.instagram.com/ltlforevr?igsh=aHY2bmhsa3o1dGpt" },
+    ],
   },
 ];
