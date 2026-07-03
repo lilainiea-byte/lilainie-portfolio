@@ -151,11 +151,11 @@ export default function About() {
               anywhere to happen. Around the same time,{" "}
               <span className="font-bold text-terracotta">
                 I co-created McMaster&apos;s first podcast and radio show
-                centred on student life
+                centred on African student&apos;s immigrant student life
               </span>
-              , covering the Black student experience, immigration, and pop
-              culture, built for any student, especially immigrants, who
-              needed to hear their own experience reflected back.
+              , covering the student experience, culture, and pop culture,
+              built for any student, especially immigrants, who needed to
+              hear their own experience reflected back.
             </p>
 
             <p className="text-lg md:text-xl leading-relaxed">
