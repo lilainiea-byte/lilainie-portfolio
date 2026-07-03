@@ -52,6 +52,12 @@ export const aiTools: AITool[] = [
     blurb: "Day-to-day workflow assistance in the editor.",
     logo: "/images/toolkit/github-copilot.svg",
   },
+  {
+    name: "Microsoft Copilot",
+    blurb:
+      "My core driver for operational efficiency and project governance. I use it to synthesize multi-stakeholder data and instantly transform unstructured notes into clean, auditable documentation architectures.",
+    logo: "/images/toolkit/microsoft-copilot.svg",
+  },
 ];
 
 export const certifications: Certification[] = [];
