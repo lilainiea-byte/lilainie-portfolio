@@ -73,4 +73,16 @@ export const projects: Project[] = [
       { label: "Scripting & Content Direction", url: "https://www.instagram.com/reel/DY0f-23Kkq5/?igsh=dncyZjRscXhmd2t1" },
     ],
   },
+  {
+    slug: "intergenerational-cookbook-program",
+    title: "Intergenerational Cook Book Program",
+    context: "Skills For Change (Non-Profit)",
+    description:
+      "The Intergenerational Cook Book Program was designed to build meaningful connections and celebrate the rich culinary traditions in Black Communities. Over the course of 8 exciting sessions, seniors (55+) and youth came together to create a collaborative cookbook zine celebrating food, history, and community! Program logistics and data tracking were coordinated by myself and another program facilitator. E-book illustrated by myself.",
+    tags: ["Creative Design", "Partnerships", "Implementation", "Continuous Improvement"],
+    category: "coordination",
+    image: "/images/projects/intergenerational-cookbook-program.png",
+    imagePosition: "50% 50%",
+    link: "https://simplebooklet.com/sfclilainie#page=1",
+  },
 ];
