@@ -37,6 +37,7 @@ Fonts: `font-display` (display/headings), `font-script` (handwritten accent), `f
 |---|---|---|
 | `/` | `src/app/page.tsx` | Hero with portrait photo, intro blurb, CTA |
 | `/about` | `src/app/about/page.tsx` | Bio paragraphs + "Where I focus" pillars |
+| `/toolkit` | `src/app/toolkit/page.tsx` | Software tiles + certifications list, data in `src/data/toolkit.ts` |
 | `/projects` | `src/app/projects/page.tsx` | Grid of ProjectCards |
 | `/contact` | `src/app/contact/page.tsx` | Contact links + availability chips |
 
@@ -96,3 +97,4 @@ The portrait uses an oversized inner wrapper to zoom/crop without CSS transform 
 - More supplemental media for Projects 1 and 2 (extraFiles / extraImages)
 - More projects (user adding them one by one)
 - Resume PDF (user will provide)
+- Toolkit page (`/toolkit`) is scaffolded with empty states; software logos go in `public/images/toolkit/` and entries get appended to `software`/`certifications` in `src/data/toolkit.ts` (user adding them one by one)
