@@ -226,14 +226,24 @@ export default function ProjectCard({ project }: { project: Project }) {
                       </a>
                     ))}
                     {project.extraImages?.map((img, i) => (
-                      <div key={img.src}>
-                        <div className="relative w-full aspect-video rounded overflow-hidden">
-                          <Image src={img.src} alt={img.label ?? `${project.title} media ${i + 1}`} fill className="object-cover" sizes="600px" />
-                        </div>
-                        {img.label && (
-                          <p className="text-xs text-ink/40 mt-1.5">{img.label}</p>
-                        )}
-                      </div>
+                      <a
+                        key={img.src}
+                        href={img.src}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 group/file"
+                      >
+                        <span className="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded bg-ink/5 text-ink/40 group-hover/file:bg-terracotta group-hover/file:text-white transition-colors">
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <circle cx="8.5" cy="8.5" r="1.5" />
+                            <path d="m21 15-5-5L5 21" />
+                          </svg>
+                        </span>
+                        <span className="text-sm text-ink-muted group-hover/file:text-terracotta transition-colors leading-tight">
+                          {img.label ?? `Media ${i + 1}`}
+                        </span>
+                      </a>
                     ))}
                   </div>
                 ) : (
