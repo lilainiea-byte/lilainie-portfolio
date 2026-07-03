@@ -85,4 +85,16 @@ export const projects: Project[] = [
     imagePosition: "50% 50%",
     link: "https://simplebooklet.com/sfclilainie#page=1",
   },
+  {
+    slug: "mcmaster-black-yearbook",
+    title: "McMaster Inaugural Black Student Year Book",
+    context: "Black Student Success Centre (BSSC)",
+    description:
+      "As one of three photographers on McMaster's first-ever Black Student Yearbook, I helped capture and edit portraits for the 2024 graduating class under a tight production timeline, coordinating closely with the yearbook team to make sure as many graduates as possible were represented before the deadline. Using Lightroom, Canva, and Photoshop, I worked directly with the editor to shape design elements throughout the book, helping bring a shared vision to life: a project meant to highlight Black excellence and set a precedent for what the student body could build when talent came together.",
+    tags: ["Creative Design", "Partnerships", "Implementation", "Continuous Improvement"],
+    category: "coordination",
+    image: "/images/projects/mcmaster-black-yearbook.png",
+    imagePosition: "50% 30%",
+    link: "https://issuu.com/blackstudentyearbook/docs/bssc_yearbook_9_",
+  },
 ];
