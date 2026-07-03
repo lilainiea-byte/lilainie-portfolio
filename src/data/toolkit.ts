@@ -29,8 +29,8 @@ export const software: SoftwareItem[] = [
   { name: "Snapchat", logo: "/images/toolkit/snapchat.svg" },
   { name: "TikTok", logo: "/images/toolkit/tiktok.svg" },
   { name: "Hootsuite", logo: "/images/toolkit/hootsuite.svg" },
-  { name: "RedCap" },
-  { name: "NVivo" },
+  { name: "RedCap", logo: "/images/toolkit/redcap.png" },
+  { name: "NVivo", logo: "/images/toolkit/nvivo.png" },
 ];
 
 export const certifications: Certification[] = [];
