@@ -47,8 +47,7 @@ export default function Home() {
           </div>
 
           <p className="font-script text-2xl md:text-3xl text-ink mt-8 max-w-md">
-            Bridging institutions and the people they serve, one
-            program at a time.
+            A connector at heart, a strategist by skill.
           </p>
 
           <div className="flex flex-wrap gap-3 mt-8 font-body">
