@@ -4,6 +4,13 @@ export type SoftwareItem = {
   url?: string; // optional link, e.g. tool's website
 };
 
+export type AITool = {
+  name: string;
+  blurb: string;
+  logo?: string; // path under /public/images/toolkit/
+  url?: string;
+};
+
 export type Certification = {
   name: string;
   issuer: string;
@@ -31,6 +38,20 @@ export const software: SoftwareItem[] = [
   { name: "Hootsuite", logo: "/images/toolkit/hootsuite.svg" },
   { name: "RedCap", logo: "/images/toolkit/redcap.png" },
   { name: "NVivo", logo: "/images/toolkit/nvivo.png" },
+];
+
+export const aiTools: AITool[] = [
+  {
+    name: "Claude",
+    blurb:
+      "My go-to for building automations and vibe-coding projects — I taught myself to code with it, and used it to design and build this very site.",
+    logo: "/images/toolkit/claude.svg",
+  },
+  {
+    name: "GitHub Copilot",
+    blurb: "Day-to-day workflow assistance in the editor.",
+    logo: "/images/toolkit/github-copilot.svg",
+  },
 ];
 
 export const certifications: Certification[] = [];

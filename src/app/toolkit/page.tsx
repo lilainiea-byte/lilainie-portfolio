@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { software, certifications } from "@/data/toolkit";
+import { software, aiTools, certifications } from "@/data/toolkit";
 
 const tileAccents = [
   { bg: "bg-terracotta-tint", fg: "text-terracotta" },
@@ -65,6 +65,57 @@ export default function Toolkit() {
                       <p className={`font-body text-sm font-bold text-center ${accent.fg}`}>
                         {tool.name}
                       </p>
+                    </Wrapper>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+
+          <div>
+            <p className="font-body text-xs uppercase tracking-[0.15em] text-ink-hint mb-6">
+              AI-Assisted Development
+            </p>
+
+            {aiTools.length === 0 ? (
+              <div className="border border-dashed border-border-strong rounded-md py-16 text-center">
+                <p className="text-ink-muted">More on the way.</p>
+              </div>
+            ) : (
+              <div className="grid md:grid-cols-2 gap-4">
+                {aiTools.map((tool, i) => {
+                  const accent = tileAccents[i % tileAccents.length];
+                  const Wrapper = tool.url ? "a" : "div";
+                  return (
+                    <Wrapper
+                      key={tool.name}
+                      {...(tool.url
+                        ? { href: tool.url, target: "_blank", rel: "noopener noreferrer" }
+                        : {})}
+                      className="flex items-start gap-3.5 p-4 border border-border rounded-md bg-white/60 hover:border-border-strong transition-colors"
+                    >
+                      <div className={`w-9 h-9 rounded-sm flex items-center justify-center shrink-0 p-2 ${accent.bg}`}>
+                        {tool.logo ? (
+                          <div className="relative w-full h-full">
+                            <Image
+                              src={tool.logo}
+                              alt={tool.name}
+                              fill
+                              className="object-contain"
+                            />
+                          </div>
+                        ) : (
+                          <span className={`font-display text-lg ${accent.fg}`}>
+                            {tool.name.charAt(0)}
+                          </span>
+                        )}
+                      </div>
+                      <div>
+                        <p className="font-body font-bold text-sm mb-1">{tool.name}</p>
+                        <p className="text-sm text-ink-muted leading-relaxed">
+                          {tool.blurb}
+                        </p>
+                      </div>
                     </Wrapper>
                   );
                 })}
