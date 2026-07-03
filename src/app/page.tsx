@@ -68,12 +68,16 @@ export default function Home() {
             Behavioural science meets implementation.
           </p>
           <p className="text-lg md:text-xl leading-relaxed text-ink/80">
-            I grew up with access to health systems that worked, and I saw
-            firsthand what happens to people when those same systems don&apos;t
-            exist or don&apos;t reach them. That contrast stayed with me, and
-            I&apos;ve been spotting the same pattern everywhere since, in
-            classrooms, in workplaces, in programs meant to help people that
-            quietly weren&apos;t built to.
+            Behavioural science taught me to notice patterns. Growing up
+            moving through systems like healthcare, education, and community
+            networks that worked, I saw firsthand what happens to people when
+            those same systems don&apos;t exist or don&apos;t reach them. That
+            contrast stayed with me, and I&apos;ve been spotting the same
+            pattern everywhere since, in classrooms, in workplaces, in
+            programs meant to help people that quietly weren&apos;t built to.
+          </p>
+          <p className="font-script text-2xl text-ink mt-6">
+            Glad you&apos;re here, getting to know me.
           </p>
           <div className="mt-10">
             <Link
