@@ -47,7 +47,7 @@ export default function Home() {
           </div>
 
           <p className="font-script text-2xl md:text-3xl text-ink mt-8 max-w-md">
-            Bridging institutions and the people they serve &mdash; one
+            Bridging institutions and the people they serve, one
             program at a time.
           </p>
 

@@ -18,7 +18,7 @@ export type Certification = {
   url?: string; // optional verification link
 };
 
-// Add tools as you go — logo is optional, items without one render as a text tile.
+// Add tools as you go: logo is optional, items without one render as a text tile.
 export const software: SoftwareItem[] = [
   { name: "Canva", logo: "/images/toolkit/canva.svg" },
   { name: "Adobe Suite", logo: "/images/toolkit/adobe.svg" },
@@ -44,7 +44,7 @@ export const aiTools: AITool[] = [
   {
     name: "Claude",
     blurb:
-      "My go-to for building automations and vibe-coding projects — I taught myself to code with it, and used it to design and build this very site.",
+      "My go-to for building automations and vibe-coding projects. I taught myself to code with it, and used it to design and build this very site.",
     logo: "/images/toolkit/claude.svg",
   },
   {

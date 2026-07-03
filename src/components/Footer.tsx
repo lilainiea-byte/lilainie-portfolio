@@ -6,7 +6,7 @@ export default function Footer() {
           LILAINIE ADJEI-ADDO
         </p>
         <p className="text-sm text-cream/60">
-          &copy; {new Date().getFullYear()} &mdash; Built with intention.
+          &copy; {new Date().getFullYear()}. Built with intention.
         </p>
       </div>
     </footer>

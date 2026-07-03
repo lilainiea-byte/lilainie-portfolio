@@ -227,7 +227,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                     ))}
                     {project.extraImages?.map((src, i) => (
                       <div key={i} className="relative w-full aspect-video rounded overflow-hidden">
-                        <Image src={src} alt={`${project.title} — media ${i + 1}`} fill className="object-cover" sizes="600px" />
+                        <Image src={src} alt={`${project.title} media ${i + 1}`} fill className="object-cover" sizes="600px" />
                       </div>
                     ))}
                   </div>

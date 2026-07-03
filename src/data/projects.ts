@@ -3,7 +3,7 @@ export type ProjectCategory = "coordination" | "partnerships" | "implementation"
 export type Project = {
   slug: string;
   title: string;
-  context: string; // e.g. "BCAP — Program Officer" or "Freelance"
+  context: string; // e.g. "BCAP: Program Officer" or "Freelance"
   description: string;
   tags: string[];
   category: ProjectCategory; // drives the card's thumbnail color
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     title: "Black Youth In STEAM",
     context: "Skills For Change (Non-Profit)",
     description:
-      "As Youth Community Worker, I worked on this Ontario Ministry of Citizenship and Multiculturalism funded program delivered in partnership with York University, Centennial College, Tropicana Community Services, Urban Pilots Network, Toronto Symphony Orchestra, Art Gallery of Ontario, and Young People's Theatre. I co-designed and coordinated 4 cohorts of a STEM-focused workshop and mentorship series for Black youth ages 14 to 18. I led outreach efforts that doubled program sign-up rates, increased client retention, and promoted client referrals — the program's impact was recognized through a Youth Leadership Award, with the nomination written by a participant who benefited from the exposure the program provided them.",
+      "As Youth Community Worker, I worked on this Ontario Ministry of Citizenship and Multiculturalism funded program delivered in partnership with York University, Centennial College, Tropicana Community Services, Urban Pilots Network, Toronto Symphony Orchestra, Art Gallery of Ontario, and Young People's Theatre. I co-designed and coordinated 4 cohorts of a STEM-focused workshop and mentorship series for Black youth ages 14 to 18. I led outreach efforts that doubled program sign-up rates, increased client retention, and promoted client referrals. The program's impact was recognized through a Youth Leadership Award, with the nomination written by a participant who benefited from the exposure the program provided them.",
     tags: ["Program Design", "Data", "Partnerships", "Implementation", "Continuous Improvement"],
     category: "coordination",
     image: "/images/projects/black-youth-in-steam-banner.png",
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     title: "Ubuntu In Dementia Care",
     context: "Skills For Change (Non-Profit)",
     description:
-      "An 8-session program funded by the Ontario Trillium Foundation, delivered with Tropicana Community Services, supporting Black family caregivers in the GTA. I coordinated the program and all its logistics, connecting caregivers to a high-quality care home, peer support, and ongoing access to learning resources and professionals in the field. When feedback showed many caregivers were balancing work and caregiving, I helped redesign the program to be primarily virtual — keeping the care home visit in-person so families could see the space and meet staff directly, a shift that improved accessibility while preserving trust.",
+      "An 8-session program funded by the Ontario Trillium Foundation, delivered with Tropicana Community Services, supporting Black family caregivers in the GTA. I coordinated the program and all its logistics, connecting caregivers to a high-quality care home, peer support, and ongoing access to learning resources and professionals in the field. When feedback showed many caregivers were balancing work and caregiving, I helped redesign the program to be primarily virtual, keeping the care home visit in-person so families could see the space and meet staff directly, a shift that improved accessibility while preserving trust.",
     tags: ["Program Design", "Data", "Partnerships", "Implementation", "Continuous Improvement"],
     category: "coordination",
     image: "/images/projects/ubuntu-dementia-care.png",
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     image: "/images/projects/camh-social-campaign.png",
     imagePosition: "50% 50%",
     extraFiles: [
-      { label: "Carousel Post — Before You Call The Girl With The List", url: "/files/projects/camh-carousel-post1.pdf" },
+      { label: "Carousel Post: Before You Call The Girl With The List", url: "/files/projects/camh-carousel-post1.pdf" },
       { label: "Communications & Social Media Plan", url: "/files/projects/camh-comms-plan.pdf" },
       { label: "Event Flyer Post", url: "/files/projects/camh-event-flyer-post2.pdf" },
     ],
@@ -61,7 +61,7 @@ export const projects: Project[] = [
   {
     slug: "larger-than-life",
     title: "Content & Events Strategist",
-    context: "Freelance — Larger Than Life",
+    context: "Freelance, Larger Than Life",
     description:
       "I started working with the creative and events collective \"Larger Than Life\" in October, initially developing social media campaigns for their December events. That work grew into supporting event operations directly, including venue inspections, merchandise acquisition and disbursement, and talent coordination, as they build out a creative landscape in Accra. Now the team is working with creatives across Ghana, London, and North America on upcoming projects that will give creatives a larger platform and visibility. My role spans content scripting, research, and planning, tying content strategy directly into event promotion.\n\nSince October, the LTL Instagram account has grown from 200 to over 1,100 followers, with 97K views in the last 90 days and accounts reached organically up 71.5%. Over 75% of that reach came from outside the existing follower base. That growth has shown up in real outcomes: 4 successful events in Accra during our debut \"Detty December\" season, and 3 nearly sold out upcoming events in the US during FIFA season.",
     tags: ["Creative Design", "Partnerships", "Implementation", "Continuous Improvement"],
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     image: "/images/projects/ltl-logo.png",
     imagePosition: "50% 50%",
     extraLinks: [
-      { label: "Instagram — @ltlforevr", url: "https://www.instagram.com/ltlforevr?igsh=aHY2bmhsa3o1dGpt" },
+      { label: "Instagram: @ltlforevr", url: "https://www.instagram.com/ltlforevr?igsh=aHY2bmhsa3o1dGpt" },
       { label: "Scripting & Content Direction", url: "https://www.instagram.com/reel/DY0f-23Kkq5/?igsh=dncyZjRscXhmd2t1" },
     ],
   },
