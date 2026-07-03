@@ -44,12 +44,13 @@ export const aiTools: AITool[] = [
   {
     name: "Claude",
     blurb:
-      "My go-to for building automations and vibe-coding projects. I taught myself to code with it, and used it to design and build this very site.",
+      "I use Claude Code in my terminal to its full capacity, not just for quick questions, but as an autonomous coding partner. I leverage it to manage files, run commands, and debug errors, using it to build this entire portfolio site from the ground up.",
     logo: "/images/toolkit/claude.svg",
   },
   {
     name: "GitHub Copilot",
-    blurb: "Day-to-day workflow assistance in the editor.",
+    blurb:
+      "My helper for inline coding. While Claude handles the bigger project building blocks, I use Copilot for fast, real-time code suggestions and quick refactoring inside my editor.",
     logo: "/images/toolkit/github-copilot.svg",
   },
   {
