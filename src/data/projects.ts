@@ -70,6 +70,7 @@ export const projects: Project[] = [
     imagePosition: "50% 50%",
     extraLinks: [
       { label: "Instagram — @ltlforevr", url: "https://www.instagram.com/ltlforevr?igsh=aHY2bmhsa3o1dGpt" },
+      { label: "Scripting & Content Direction", url: "https://www.instagram.com/reel/DY0f-23Kkq5/?igsh=dncyZjRscXhmd2t1" },
     ],
   },
 ];
