@@ -12,7 +12,7 @@ export type Project = {
   image?: string; // path under /public/images
   imagePosition?: string; // CSS object-position, e.g. "50% 40%"
   extraFiles?: { label: string; url: string }[]; // supplemental PDFs/docs shown in modal
-  extraImages?: string[]; // supplemental image paths shown in modal
+  extraImages?: { src: string; label?: string }[]; // supplemental images shown in modal
   extraLinks?: { label: string; url: string }[]; // supplemental external links shown in modal
 };
 
@@ -96,5 +96,10 @@ export const projects: Project[] = [
     image: "/images/projects/mcmaster-black-yearbook.png",
     imagePosition: "50% 30%",
     link: "https://issuu.com/blackstudentyearbook/docs/bssc_yearbook_9_",
+    extraImages: [
+      { src: "/images/projects/mcmaster-yearbook-subteam-bts.jpg", label: "Sub-team BTS" },
+      { src: "/images/projects/mcmaster-yearbook-raw-shot.jpg", label: "Raw Image Shot by Lilainie" },
+      { src: "/images/projects/mcmaster-yearbook-edited-spread.jpg", label: "Edited Spread" },
+    ],
   },
 ];
