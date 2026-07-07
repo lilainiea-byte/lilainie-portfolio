@@ -38,6 +38,8 @@ export const software: SoftwareItem[] = [
   { name: "Hootsuite", logo: "/images/toolkit/hootsuite.svg" },
   { name: "RedCap", logo: "/images/toolkit/redcap.png" },
   { name: "NVivo", logo: "/images/toolkit/nvivo.png" },
+  { name: "Tableau", logo: "/images/toolkit/tableau.svg" },
+  { name: "Calendly", logo: "/images/toolkit/calendly.svg" },
 ];
 
 export const aiTools: AITool[] = [
