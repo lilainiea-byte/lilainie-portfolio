@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import FadeUp from "@/components/FadeUp";
 import FadeIn from "@/components/FadeIn";
+import Marquee from "@/components/Marquee";
 
 export default function Home() {
   return (
@@ -72,6 +73,8 @@ export default function Home() {
           </FadeUp>
         </div>
       </section>
+
+      <Marquee />
 
       {/* INTRO STATEMENT */}
       <section className="bg-cream">
