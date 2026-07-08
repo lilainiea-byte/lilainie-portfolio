@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import FadeUp from "@/components/FadeUp";
 import FadeIn from "@/components/FadeIn";
+import ScrollScale from "@/components/ScrollScale";
 import Marquee from "@/components/Marquee";
 
 export default function Home() {
@@ -25,16 +26,18 @@ export default function Home() {
 
           <div className="relative">
             <FadeUp delay={0.22}>
-              <h1
-                className="font-display uppercase leading-[1.05] text-terracotta select-none"
-                style={{ fontSize: "clamp(3.5rem, 14vw, 11rem)" }}
-              >
-                PEOPLE.
-                <br />
-                SYSTEMS.
-                <br />
-                IMPACT.
-              </h1>
+              <ScrollScale>
+                <h1
+                  className="font-display uppercase leading-[1.05] text-terracotta select-none"
+                  style={{ fontSize: "clamp(3.5rem, 14vw, 11rem)" }}
+                >
+                  PEOPLE.
+                  <br />
+                  SYSTEMS.
+                  <br />
+                  IMPACT.
+                </h1>
+              </ScrollScale>
             </FadeUp>
 
             {/* Photo, overlapping the type like the inspiration image */}
