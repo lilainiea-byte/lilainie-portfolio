@@ -29,9 +29,25 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Lilainie Adjei-Addo",
+  metadataBase: new URL("https://lilainie-portfolio.vercel.app"),
+  title: {
+    default: "Lilainie Adjei-Addo — People. Systems. Impact.",
+    template: "%s — Lilainie Adjei-Addo",
+  },
   description:
-    "Background in Human Behavioural Sciences & Neuroscience. Working at the intersection of people, partnerships, and implementation.",
+    "Behavioural science meets implementation. A connector at heart and strategist by skill, working across partnerships, program coordination, and implementation.",
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "Lilainie Adjei-Addo",
+    title: "Lilainie Adjei-Addo — People. Systems. Impact.",
+    description:
+      "Behavioural science meets implementation. A connector at heart and strategist by skill, working across partnerships, program coordination, and implementation.",
+    locale: "en_CA",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({

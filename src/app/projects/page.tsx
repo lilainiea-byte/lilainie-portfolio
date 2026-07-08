@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { projects } from "@/data/projects";
 import AnimatedProjectGrid from "@/components/AnimatedProjectGrid";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Selected work across program coordination, partnerships, and implementation — from youth STEAM programming to dementia-care initiatives.",
+};
 
 export default function Projects() {
   return (

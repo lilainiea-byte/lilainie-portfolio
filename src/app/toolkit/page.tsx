@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { software, aiTools, certifications } from "@/data/toolkit";
+
+export const metadata: Metadata = {
+  title: "Toolkit",
+  description: "The software, AI tools, and certifications I work with.",
+};
 
 const tileAccents = [
   { bg: "bg-terracotta-tint", fg: "text-terracotta" },

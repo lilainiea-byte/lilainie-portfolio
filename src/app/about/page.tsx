@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import FadeUp from "@/components/FadeUp";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Behavioural science taught me to notice patterns. Where I focus: project coordination, partnerships, implementation, continuous improvement, and creative design.",
+};
 
 const pillars = [
   {

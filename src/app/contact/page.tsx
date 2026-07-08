@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Let's connect — reach out about partnerships, program coordination, and implementation work.",
+};
+
 const contactLinks = [
   {
     label: "lilainiea@gmail.com",
