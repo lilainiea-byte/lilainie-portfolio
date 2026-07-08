@@ -38,8 +38,26 @@ export default function Home() {
             </FadeUp>
 
             {/* Photo, overlapping the type like the inspiration image */}
-            <div className="md:absolute md:top-0 md:right-0 md:translate-x-[10%] w-full md:w-[40%] aspect-[3/4] mt-8 md:mt-0">
-              <FadeIn delay={0.35} className="relative w-full h-full rounded-sm overflow-hidden border-2 border-ink/20">
+            <div className="relative md:absolute md:top-0 md:right-0 md:translate-x-[10%] w-full md:w-[40%] aspect-[3/4] mt-8 md:mt-0">
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[130%] aspect-square"
+              >
+                <svg viewBox="0 0 100 100" className="w-full h-full animate-spin-slow">
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="48.5"
+                    fill="none"
+                    pathLength={96}
+                    stroke="var(--terracotta)"
+                    strokeWidth="1.5"
+                    strokeDasharray="10 6"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </div>
+              <FadeIn delay={0.35} className="relative z-10 w-full h-full rounded-sm overflow-hidden border-2 border-ink/20">
                 <div className="absolute" style={{ top: "-30%", left: "-30%", width: "160%", height: "160%" }}>
                   <Image
                     src="/images/portrait-v2.jpg"
