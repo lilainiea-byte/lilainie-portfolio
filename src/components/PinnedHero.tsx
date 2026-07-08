@@ -104,7 +104,7 @@ export default function PinnedHero() {
           </div>
 
           {/* Photo, overlapping the type like the inspiration image */}
-          <div className="relative md:absolute md:top-0 md:right-0 md:translate-x-[10%] w-full md:w-[40%] aspect-[3/4] mt-8 md:mt-0">
+          <div className="relative md:absolute md:top-0 md:right-0 md:translate-x-[10%] w-[78%] mx-auto md:mx-0 md:w-[46%] aspect-square mt-8 md:mt-0">
             <div
               aria-hidden="true"
               className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[130%] aspect-square"
@@ -123,14 +123,14 @@ export default function PinnedHero() {
                 />
               </svg>
             </div>
-            <FadeIn delay={0.35} className="relative z-10 w-full h-full rounded-sm overflow-hidden border-2 border-ink/20">
+            <FadeIn delay={0.35} className="relative z-10 w-full h-full rounded-full overflow-hidden border-2 border-ink/20">
               <div className="absolute" style={{ top: "-30%", left: "-30%", width: "160%", height: "160%" }}>
                 <Image
                   src="/images/portrait-v2.jpg"
                   alt="Lilainie Adjei-Addo"
                   fill
                   priority
-                  sizes="(min-width: 768px) 60vw, 160vw"
+                  sizes="(min-width: 768px) 75vw, 125vw"
                   className="object-cover"
                   style={{ objectPosition: "50% 25%" }}
                 />
