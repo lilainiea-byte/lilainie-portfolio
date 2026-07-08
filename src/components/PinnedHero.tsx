@@ -16,10 +16,14 @@ export default function PinnedHero() {
 
   useGSAP(
     () => {
+      // keep ScrollTrigger from re-measuring (and jumping) when the mobile
+      // browser chrome shows/hides and resizes the viewport
+      ScrollTrigger.config({ ignoreMobileResize: true });
+
       const mm = gsap.matchMedia();
 
       mm.add(
-        "(min-width: 768px) and (prefers-reduced-motion: no-preference)",
+        "(prefers-reduced-motion: no-preference)",
         () => {
           const words = gsap.utils.toArray<HTMLElement>(".hero-word");
           const descs = gsap.utils.toArray<HTMLElement>(".hero-desc");
@@ -86,6 +90,19 @@ export default function PinnedHero() {
             </h1>
           </FadeUp>
 
+          {/* Between headline and photo so it stays on-screen while pinned on mobile */}
+          <div className="hero-descs relative mt-6 h-20 md:h-16 max-w-md" aria-hidden="true">
+            <p className="hero-desc absolute inset-x-0 top-0 opacity-0 font-body text-base md:text-lg leading-relaxed text-ink/80">
+              Connection starts with understanding how people actually behave, not how they&apos;re assumed to.
+            </p>
+            <p className="hero-desc absolute inset-x-0 top-0 opacity-0 font-body text-base md:text-lg leading-relaxed text-ink/80">
+              Programs are only as good as the structure holding them up, so I build structures that hold.
+            </p>
+            <p className="hero-desc absolute inset-x-0 top-0 opacity-0 font-body text-base md:text-lg leading-relaxed text-ink/80">
+              Research means nothing until it becomes something someone can actually use.
+            </p>
+          </div>
+
           {/* Photo, overlapping the type like the inspiration image */}
           <div className="relative md:absolute md:top-0 md:right-0 md:translate-x-[10%] w-full md:w-[40%] aspect-[3/4] mt-8 md:mt-0">
             <div
@@ -120,18 +137,6 @@ export default function PinnedHero() {
               </div>
             </FadeIn>
           </div>
-        </div>
-
-        <div className="hero-descs relative mt-6 h-20 md:h-16 max-w-md" aria-hidden="true">
-          <p className="hero-desc absolute inset-x-0 top-0 opacity-0 font-body text-base md:text-lg leading-relaxed text-ink/80">
-            Connection starts with understanding how people actually behave, not how they&apos;re assumed to.
-          </p>
-          <p className="hero-desc absolute inset-x-0 top-0 opacity-0 font-body text-base md:text-lg leading-relaxed text-ink/80">
-            Programs are only as good as the structure holding them up, so I build structures that hold.
-          </p>
-          <p className="hero-desc absolute inset-x-0 top-0 opacity-0 font-body text-base md:text-lg leading-relaxed text-ink/80">
-            Research means nothing until it becomes something someone can actually use.
-          </p>
         </div>
 
         <FadeUp delay={0.45}>
