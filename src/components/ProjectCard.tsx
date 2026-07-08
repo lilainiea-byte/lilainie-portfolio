@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import type { Project, ProjectCategory } from "@/data/projects";
 
@@ -116,17 +117,27 @@ export default function ProjectCard({ project }: { project: Project }) {
       </div>
 
       {/* ── Modal ── */}
-      {open && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8"
-          onClick={() => setOpen(false)}
-        >
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            key="modal-overlay"
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            onClick={() => setOpen(false)}
+          >
           {/* Backdrop */}
           <div className="absolute inset-0 bg-ink/60 backdrop-blur-sm" />
 
           {/* Panel */}
-          <div
+          <motion.div
             className="relative z-10 bg-white rounded-lg shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto"
+            initial={{ opacity: 0, scale: 0.96, y: 12 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.96, y: 12 }}
+            transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
@@ -251,9 +262,10 @@ export default function ProjectCard({ project }: { project: Project }) {
                 )}
               </div>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       )}
+      </AnimatePresence>
     </>
   );
 }

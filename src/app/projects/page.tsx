@@ -1,5 +1,5 @@
 import { projects } from "@/data/projects";
-import ProjectCard from "@/components/ProjectCard";
+import AnimatedProjectGrid from "@/components/AnimatedProjectGrid";
 
 export default function Projects() {
   return (
@@ -18,11 +18,7 @@ export default function Projects() {
 
       <section className="bg-cream">
         <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
-            ))}
-          </div>
+          <AnimatedProjectGrid projects={projects} />
         </div>
       </section>
     </>
