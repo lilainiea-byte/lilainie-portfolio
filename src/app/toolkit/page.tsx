@@ -52,6 +52,7 @@ export default function Toolkit() {
                             src={tool.logo}
                             alt={tool.name}
                             fill
+                            sizes="48px"
                             className="object-contain"
                           />
                         </div>
@@ -101,6 +102,7 @@ export default function Toolkit() {
                               src={tool.logo}
                               alt={tool.name}
                               fill
+                              sizes="36px"
                               className="object-contain"
                             />
                           </div>
