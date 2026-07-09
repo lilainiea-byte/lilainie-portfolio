@@ -14,6 +14,7 @@ export type Project = {
   extraFiles?: { label: string; url: string }[]; // supplemental PDFs/docs shown in modal
   extraImages?: { src: string; label?: string }[]; // supplemental images shown in modal
   extraLinks?: { label: string; url: string }[]; // supplemental external links shown in modal
+  impact?: string[]; // short stat/outcome chips shown on card + modal
 };
 
 // Replace these with your real projects. Each card needs either a `link`
@@ -30,6 +31,7 @@ export const projects: Project[] = [
     category: "coordination",
     image: "/images/projects/black-youth-in-steam-banner.png",
     imagePosition: "50% 50%",
+    impact: ["4 cohorts delivered", "2× sign-up rate", "Youth Leadership Award"],
   },
   {
     slug: "ubuntu-dementia-care",
@@ -39,8 +41,9 @@ export const projects: Project[] = [
       "An 8-session program funded by the Ontario Trillium Foundation, delivered with Tropicana Community Services, supporting Black family caregivers in the GTA. I coordinated the program and all its logistics, connecting caregivers to a high-quality care home, peer support, and ongoing access to learning resources and professionals in the field. When feedback showed many caregivers were balancing work and caregiving, I helped redesign the program to be primarily virtual, keeping the care home visit in-person so families could see the space and meet staff directly, a shift that improved accessibility while preserving trust.",
     tags: ["Program Design", "Data", "Partnerships", "Implementation", "Continuous Improvement"],
     category: "coordination",
-    image: "/images/projects/ubuntu-dementia-care.png",
+    image: "/images/projects/ubuntu-dementia-care.jpg",
     imagePosition: "50% 50%",
+    impact: ["8-session program", "Trillium-funded", "Redesigned virtual-first"],
   },
   {
     slug: "camh-social-campaign",
@@ -52,6 +55,7 @@ export const projects: Project[] = [
     category: "coordination",
     image: "/images/projects/camh-social-campaign.png",
     imagePosition: "50% 50%",
+    impact: ["Concept campaign", "Full comms plan", "3 media samples"],
     extraFiles: [
       { label: "Carousel Post: Before You Call The Girl With The List", url: "/files/projects/camh-carousel-post1.pdf" },
       { label: "Communications & Social Media Plan", url: "/files/projects/camh-comms-plan.pdf" },
@@ -68,6 +72,7 @@ export const projects: Project[] = [
     category: "freelance",
     image: "/images/projects/ltl-logo.png",
     imagePosition: "50% 50%",
+    impact: ["200 → 1,100 followers", "97K views in 90 days", "+71.5% organic reach"],
     extraLinks: [
       { label: "Instagram: @ltlforevr", url: "https://www.instagram.com/ltlforevr?igsh=aHY2bmhsa3o1dGpt" },
       { label: "Scripting & Content Direction", url: "https://www.instagram.com/reel/DY0f-23Kkq5/?igsh=dncyZjRscXhmd2t1" },
@@ -84,6 +89,7 @@ export const projects: Project[] = [
     image: "/images/projects/intergenerational-cookbook-program.png",
     imagePosition: "50% 50%",
     link: "https://simplebooklet.com/sfclilainie#page=1",
+    impact: ["8 sessions", "Published e-book zine", "Self-illustrated"],
   },
   {
     slug: "mcmaster-black-yearbook",
@@ -96,6 +102,7 @@ export const projects: Project[] = [
     image: "/images/projects/mcmaster-black-yearbook.png",
     imagePosition: "50% 30%",
     link: "https://issuu.com/blackstudentyearbook/docs/bssc_yearbook_9_",
+    impact: ["Inaugural edition", "Class of 2024", "Design + photography"],
     extraImages: [
       { src: "/images/projects/mcmaster-yearbook-subteam-bts.jpg", label: "Sub-team BTS" },
       { src: "/images/projects/mcmaster-yearbook-raw-shot.jpg", label: "Raw Image Shot by Lilainie" },

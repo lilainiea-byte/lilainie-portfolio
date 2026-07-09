@@ -98,6 +98,11 @@ export default function ProjectCard({ project }: { project: Project }) {
           <h3 className="font-display uppercase text-xl md:text-2xl leading-tight mb-3 group-hover:text-terracotta transition-colors">
             {project.title}
           </h3>
+          {project.impact?.length ? (
+            <p className="text-xs font-bold text-terracotta -mt-1 mb-3">
+              {project.impact.slice(0, 2).join(" · ")}
+            </p>
+          ) : null}
           <p className="text-sm text-ink-muted leading-relaxed flex-1 line-clamp-4">
             {project.description}
           </p>
@@ -170,6 +175,15 @@ export default function ProjectCard({ project }: { project: Project }) {
               <h2 className="font-display uppercase text-2xl md:text-3xl leading-tight mb-4">
                 {project.title}
               </h2>
+              {project.impact?.length ? (
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.impact.map((item) => (
+                    <span key={item} className="text-xs font-bold px-3 py-1.5 rounded-full bg-terracotta-tint text-terracotta">
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              ) : null}
               <p className="text-sm text-ink-muted leading-relaxed mb-6">{project.description}</p>
 
               <div className="flex flex-wrap gap-2 mb-6">

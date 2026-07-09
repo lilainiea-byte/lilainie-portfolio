@@ -64,7 +64,7 @@ export default function PinnedHero() {
 
   return (
     <section ref={sectionRef} className="relative bg-lavender overflow-hidden">
-      <div className="mx-auto max-w-6xl px-6 pt-16 pb-10 md:pt-24 md:pb-16">
+      <div className="mx-auto max-w-6xl px-6 pt-16 pb-10 md:pt-16 md:pb-16">
         <FadeUp delay={0}>
           <p className="font-body font-bold tracking-[0.3em] text-sm uppercase mb-6">
             Lilainie Adjei-Addo
@@ -82,7 +82,8 @@ export default function PinnedHero() {
           <FadeUp delay={0.22}>
             <h1
               className="font-display uppercase leading-[1.05] text-terracotta select-none"
-              style={{ fontSize: "clamp(3.5rem, 14vw, 11rem)" }}
+              // svh cap keeps the pinned hero (incl. taglines) above the fold on short desktop viewports
+              style={{ fontSize: "clamp(3.5rem, min(14vw, 15.5svh), 11rem)" }}
             >
               <span className="hero-word block">PEOPLE.</span>
               <span className="hero-word block">SYSTEMS.</span>
@@ -153,7 +154,14 @@ export default function PinnedHero() {
             >
               View my work
             </Link>
+            <Link
+              href="/contact#resume"
+              className="inline-block border-2 border-ink text-ink font-bold uppercase tracking-wide text-sm px-7 py-3 rounded-sm hover:bg-ink hover:text-cream transition-colors"
+            >
+              Request my resume
+            </Link>
           </div>
+          <p className="font-body text-sm text-ink/70 mt-5">Open to program coordination, partnerships &amp; implementation roles &middot; Toronto &middot; hybrid or remote</p>
         </FadeUp>
       </div>
     </section>

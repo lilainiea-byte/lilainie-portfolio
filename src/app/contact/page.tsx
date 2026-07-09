@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ResumeRequest from "@/components/ResumeRequest";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -30,7 +31,7 @@ const contactLinks = [
     ),
   },
   {
-    label: "Social Media Stats",
+    label: "LTL Growth Dashboard (Live Stats)",
     href: "https://app.trainingground.ai/mk/Lilainie",
     external: true,
     icon: (
@@ -67,7 +68,8 @@ export default function Contact() {
       </section>
 
       <section className="bg-cream">
-        <div className="mx-auto max-w-6xl px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 md:gap-16 items-start">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
           <div>
             <p className="text-lg md:text-xl leading-relaxed mb-10 text-ink/80 max-w-md">
               Interested in partnerships, programming, or just want to
@@ -109,6 +111,16 @@ export default function Contact() {
               &middot; open to hybrid &amp; remote
             </p>
           </div>
+        </div>
+
+        <div id="resume" className="scroll-mt-28 mt-16 max-w-xl">
+          <p className="font-script text-2xl text-ink mb-2">Want my resume?</p>
+          <p className="text-sm text-ink-muted mb-6 max-w-md">
+            I tailor it per industry, so tell me a little about what you&apos;re hiring
+            or building and I&apos;ll send the right version.
+          </p>
+          <ResumeRequest />
+        </div>
         </div>
       </section>
     </>
