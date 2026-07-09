@@ -62,7 +62,7 @@ const pillars = [
   },
   {
     title: "Creative Design",
-    sub: "A full-cycle creative, from strategy and concept development through production to evaluation, bringing intentional design thinking to every stage of the work.",
+    sub: "Full cycle creative work, from strategy and concept through production to evaluation.",
     bg: "bg-terracotta-tint",
     fg: "text-terracotta",
     icon: (
@@ -108,97 +108,55 @@ export default function About() {
 
             <FadeUp>
               <p className="text-lg md:text-xl leading-relaxed">
-                My background in{" "}
+                My background in Human Behavioural Sciences is why I notice
+                patterns so easily. When I identify a problem, I don&apos;t just
+                see the surface of it, I uncover its &ldquo;why.&rdquo; That
+                understanding of people is what lets me{" "}
                 <span className="font-bold text-terracotta">
-                  Human Behavioural Sciences
+                  build partnerships that hold and design systems around how
+                  people actually behave,
                 </span>{" "}
-                plays a part in my interest in structures and why I notice
-                patterns so easily. When I identify a problem,{" "}
-                <span className="font-bold text-terracotta">
-                  I don&apos;t just see the surface of it, I uncover its
-                  &ldquo;why.&rdquo;
-                </span>
+                not how they&apos;re assumed to.
               </p>
             </FadeUp>
 
             <FadeUp>
               <p className="text-lg md:text-xl leading-relaxed">
-                Understanding people beyond personality and surface level
-                interaction is what lets me actually connect with them, not just
-                maneuver. It&apos;s how{" "}
-                <span className="font-bold text-terracotta">
-                  I research their needs, build partnerships that hold, and
-                  design systems around how people actually behave
-                </span>{" "}
-                instead of how they&apos;re assumed to.
-              </p>
-            </FadeUp>
-
-            <FadeUp>
-              <p className="text-lg md:text-xl leading-relaxed">
-                Being a full cycle creative helps me tie it all into something
-                beautiful that lasts. When I build anything, I want the output to
-                be distinct and still make sense to whoever encounters it.{" "}
-                <span className="font-bold text-terracotta">
-                  Unique but never at the cost of being accessible.
-                </span>
-              </p>
-            </FadeUp>
-
-            <FadeUp>
-              <p className="text-lg md:text-xl leading-relaxed">
-                That instinct to build things myself is actually how this site
-                came to exist.{" "}
+                I&apos;m also a full cycle creative, and that instinct to build
+                things myself is how this site exists.{" "}
                 <span className="font-bold text-terracotta">
                   I taught myself to code with AI so I could design and build it
                   entirely on my own,
                 </span>{" "}
                 and I&apos;ve stayed close to where the technology is heading ever
-                since, not just to use the tools but to actually understand them,
-                because I think that fluency is going to matter more every year.
+                since. Whatever I make, I want it to be unique but never at the
+                cost of being accessible.
               </p>
             </FadeUp>
 
             <FadeUp>
               <p className="text-lg md:text-xl leading-relaxed">
                 <span className="font-bold text-terracotta">
-                  University is where I first built instead of just
-                  participating.
+                  University is where I first built instead of just participating.
                 </span>{" "}
-                When there wasn&apos;t a space for Black students on campus to
-                talk about mental health,{" "}
-                <span className="font-bold text-terracotta">
-                  I co-founded a Black mental health wellness group
-                </span>{" "}
-                alongside the only Black female counsellor available to students
-                at the time, creating room for conversations that hadn&apos;t had
-                anywhere to happen. Around the same time,{" "}
-                <span className="font-bold text-terracotta">
-                  I co-created McMaster&apos;s first podcast and radio show
-                  centred on African student&apos;s immigrant student life
-                </span>
-                , covering the student experience, culture, and pop culture,
-                built for any student, especially immigrants, who needed to
-                hear their own experience reflected back.
+                When there wasn&apos;t a space for Black students on campus to talk
+                about mental health, I co-founded a Black mental health wellness
+                group alongside the only Black female counsellor available to
+                students at the time. Around the same time, I co-created
+                McMaster&apos;s first podcast and radio show centred on African
+                immigrant student life. I&apos;ve been chasing that instinct ever
+                since.
               </p>
             </FadeUp>
 
             <FadeUp>
               <p className="text-lg md:text-xl leading-relaxed">
+                That care for people doesn&apos;t stop when the workday does.{" "}
                 <span className="font-bold text-terracotta">
-                  Since graduating, I&apos;ve kept chasing that same instinct.
+                  It&apos;s what pushes me to give my free time to doing better,
                 </span>{" "}
-                I look for projects and partners that stretch my{" "}
-                <span className="font-bold text-terracotta">
-                  project coordination and implementation
-                </span>{" "}
-                experience, because at my core{" "}
-                <span className="font-bold text-terracotta">
-                  I&apos;m a problem solver
-                </span>{" "}
-                who loves learning something new and translating it into
-                something tangible, whether that&apos;s a program, a process, or
-                knowledge someone else can actually use.
+                as a child life volunteer at SickKids and a member of the
+                Research Advisory Committee at MLSE LaunchPad.
               </p>
             </FadeUp>
           </div>
