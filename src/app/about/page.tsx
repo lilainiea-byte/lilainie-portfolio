@@ -98,32 +98,48 @@ export default function About() {
           <div className="md:col-span-3 space-y-8">
             <FadeUp>
               <p className="text-lg md:text-xl leading-relaxed">
-                To know me is to understand that I believe{" "}
                 <span className="font-bold text-terracotta">
-                  systems and programs are only as good as the structure holding
-                  them up.
-                </span>
-              </p>
-            </FadeUp>
-
-            <FadeUp>
-              <p className="text-lg md:text-xl leading-relaxed">
-                My background in Human Behavioural Sciences is why I notice
-                patterns so easily. When I identify a problem, I don&apos;t just
-                see the surface of it, I uncover its &ldquo;why.&rdquo; That
-                understanding of people is what lets me{" "}
-                <span className="font-bold text-terracotta">
-                  build partnerships that hold and design systems around how
-                  people actually behave,
+                  The first thing I ever built was a space that didn&apos;t exist
+                  yet.
                 </span>{" "}
-                not how they&apos;re assumed to.
+                In university there was nowhere for Black students to talk about
+                mental health, so I co-founded a wellness group alongside the
+                only Black female counsellor available to students at the time.
+                Then came McMaster&apos;s first podcast and radio show centred on
+                African immigrant student life, made for any student who needed
+                to hear their own experience reflected back.
               </p>
             </FadeUp>
 
             <FadeUp>
               <p className="text-lg md:text-xl leading-relaxed">
-                I&apos;m also a full cycle creative, and that instinct to build
-                things myself is how this site exists.{" "}
+                Those projects taught me something I&apos;ve never let go of:{" "}
+                <span className="font-bold text-terracotta">
+                  good intentions start things, but structure is what keeps them
+                  standing.
+                </span>{" "}
+                Every program I&apos;ve coordinated since has been an exercise in
+                building the scaffolding first.
+              </p>
+            </FadeUp>
+
+            <FadeUp>
+              <p className="text-lg md:text-xl leading-relaxed">
+                My background in Human Behavioural Sciences is why I catch gaps
+                like that in the first place. I notice patterns quickly, and when
+                I find a problem I don&apos;t stop at the surface, I dig for its
+                &ldquo;why.&rdquo;{" "}
+                <span className="font-bold text-terracotta">
+                  People will tell you where a system is failing long before the
+                  data does,
+                </span>{" "}
+                if you know how to pay attention.
+              </p>
+            </FadeUp>
+
+            <FadeUp>
+              <p className="text-lg md:text-xl leading-relaxed">
+                That builder&apos;s streak is also how this site exists.{" "}
                 <span className="font-bold text-terracotta">
                   I taught myself to code with AI so I could design and build it
                   entirely on my own,
@@ -136,22 +152,8 @@ export default function About() {
 
             <FadeUp>
               <p className="text-lg md:text-xl leading-relaxed">
-                <span className="font-bold text-terracotta">
-                  University is where I first built instead of just participating.
-                </span>{" "}
-                When there wasn&apos;t a space for Black students on campus to talk
-                about mental health, I co-founded a Black mental health wellness
-                group alongside the only Black female counsellor available to
-                students at the time. Around the same time, I co-created
-                McMaster&apos;s first podcast and radio show centred on African
-                immigrant student life. I&apos;ve been chasing that instinct ever
-                since.
-              </p>
-            </FadeUp>
-
-            <FadeUp>
-              <p className="text-lg md:text-xl leading-relaxed">
-                That care for people doesn&apos;t stop when the workday does.{" "}
+                And the care that started all of this doesn&apos;t stop when the
+                workday does.{" "}
                 <span className="font-bold text-terracotta">
                   It&apos;s what pushes me to give my free time to doing better,
                 </span>{" "}
