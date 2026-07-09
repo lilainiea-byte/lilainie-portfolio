@@ -116,8 +116,8 @@ export default function Contact() {
         <div id="resume" className="scroll-mt-28 mt-16 max-w-xl">
           <p className="font-script text-2xl text-ink mb-2">Want my resume?</p>
           <p className="text-sm text-ink-muted mb-6 max-w-md">
-            I tailor it per industry, so tell me a little about what you&apos;re hiring
-            or building and I&apos;ll send the right version.
+            Always excited about new opportunities. Tell me a little about
+            what you&apos;re working on and I&apos;ll be in touch soon.
           </p>
           <ResumeRequest />
         </div>
