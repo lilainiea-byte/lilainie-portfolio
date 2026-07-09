@@ -45,6 +45,7 @@ Fonts: `font-display` (display/headings), `font-script` (handwritten accent), `f
 
 - **`src/components/ProjectCard.tsx`** — client component (`"use client"`), handles expandable modal. Modal uses `bg-white` (not `bg-paper` which is undefined). Body scroll locked via `useEffect`.
 - **`src/components/Nav.tsx`** — site navigation
+- **`src/components/ResumeRequest.tsx`** — client component; resume request form on `/contact#resume` that composes a prefilled mailto (no backend, nothing stored). There is intentionally NO resume download — Lilainie tailors the resume per industry and sends it manually.
 
 ## Project data
 
@@ -63,7 +64,9 @@ type Project = {
   link?: string;          // external URL
   fileUrl?: string;       // path under /public/files/projects/
   extraFiles?: { label: string; url: string }[];  // shown in modal
-  extraImages?: string[]; // shown in modal
+  extraImages?: { src: string; label?: string }[]; // shown in modal
+  extraLinks?: { label: string; url: string }[];  // shown in modal
+  impact?: string[];      // short stat chips: first 2 shown on card, all in modal
 };
 ```
 
