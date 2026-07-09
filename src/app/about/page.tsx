@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
+import PillarRow from "@/components/PillarRow";
 
 export const metadata: Metadata = {
   title: "About",
@@ -77,31 +80,73 @@ const pillars = [
 export default function About() {
   return (
     <>
-      <section className="bg-lavender">
-        <div className="mx-auto max-w-6xl px-6 pt-16 pb-12 md:pt-24 md:pb-20">
-          <FadeUp delay={0}>
-            <p className="font-script text-2xl text-ink mb-4">A little about me</p>
-          </FadeUp>
-          <FadeUp delay={0.12}>
-            <h1
-              className="font-display uppercase text-terracotta leading-[0.9]"
-              style={{ fontSize: "clamp(3rem, 10vw, 7rem)" }}
-            >
-              ABOUT
-            </h1>
+      <section className="bg-lavender overflow-hidden">
+        <div className="mx-auto max-w-6xl px-6 pt-16 pb-12 md:pt-24 md:pb-20 flex items-center justify-between gap-6">
+          <div>
+            <FadeUp delay={0}>
+              <p className="font-script text-2xl text-ink mb-4">A little about me</p>
+            </FadeUp>
+            <FadeUp delay={0.12}>
+              <h1
+                className="font-display uppercase text-terracotta leading-[0.9]"
+                style={{ fontSize: "clamp(3rem, 10vw, 7rem)" }}
+              >
+                ABOUT
+              </h1>
+            </FadeUp>
+          </div>
+          <FadeUp delay={0.2}>
+            <div className="relative w-24 md:w-52 aspect-square shrink-0 mr-3 md:mr-8">
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[126%] aspect-square"
+              >
+                <svg viewBox="0 0 100 100" className="w-full h-full animate-spin-slow">
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="48.5"
+                    fill="none"
+                    pathLength={96}
+                    stroke="var(--terracotta)"
+                    strokeWidth="1.5"
+                    strokeDasharray="10 6"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </div>
+              <div className="relative z-10 w-full h-full rounded-full overflow-hidden border-2 border-ink/20">
+                <div
+                  className="absolute"
+                  style={{ top: "-30%", left: "-30%", width: "160%", height: "160%" }}
+                >
+                  <Image
+                    src="/images/portrait-v2.jpg"
+                    alt="Portrait of Lilainie Adjei-Addo"
+                    fill
+                    sizes="(min-width: 768px) 208px, 96px"
+                    className="object-cover"
+                    style={{ objectPosition: "50% 25%" }}
+                  />
+                </div>
+              </div>
+            </div>
           </FadeUp>
         </div>
       </section>
 
       <section className="bg-cream">
-        <div className="mx-auto max-w-6xl px-6 py-16 md:py-24 grid md:grid-cols-5 gap-12 md:gap-16 items-start">
-          <div className="md:col-span-3 space-y-8">
+        <div className="mx-auto max-w-6xl px-6 py-12 md:py-24 grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-16 items-start">
+          <div className="md:col-span-3 space-y-6 md:space-y-8">
             <FadeUp>
-              <p className="text-lg md:text-xl leading-relaxed">
-                <span className="font-bold text-terracotta">
-                  The first thing I ever built was a space that didn&apos;t exist
-                  yet.
-                </span>{" "}
+              <p className="text-2xl md:text-[2rem] font-bold text-terracotta leading-snug">
+                The first thing I ever built was a space that didn&apos;t exist
+                yet.
+              </p>
+            </FadeUp>
+
+            <FadeUp>
+              <p className="text-base md:text-xl leading-relaxed">
                 In university there was nowhere for Black students to talk about
                 mental health, so I co-founded a wellness group alongside the
                 only Black female counsellor available to students at the time.
@@ -112,7 +157,7 @@ export default function About() {
             </FadeUp>
 
             <FadeUp>
-              <p className="text-lg md:text-xl leading-relaxed">
+              <p className="text-base md:text-xl leading-relaxed">
                 Those projects taught me something I&apos;ve never let go of:{" "}
                 <span className="font-bold text-terracotta">
                   good intentions start things, but structure is what keeps them
@@ -124,7 +169,7 @@ export default function About() {
             </FadeUp>
 
             <FadeUp>
-              <p className="text-lg md:text-xl leading-relaxed">
+              <p className="text-base md:text-xl leading-relaxed">
                 My background in Human Behavioural Sciences is why I catch gaps
                 like that in the first place. I notice patterns quickly, and when
                 I find a problem I don&apos;t stop at the surface, I dig for its
@@ -138,7 +183,7 @@ export default function About() {
             </FadeUp>
 
             <FadeUp>
-              <p className="text-lg md:text-xl leading-relaxed">
+              <p className="text-base md:text-xl leading-relaxed">
                 That builder&apos;s streak is also how this site exists.{" "}
                 <span className="font-bold text-terracotta">
                   I taught myself to code with AI so I could design and build it
@@ -151,7 +196,7 @@ export default function About() {
             </FadeUp>
 
             <FadeUp>
-              <p className="text-lg md:text-xl leading-relaxed">
+              <p className="text-base md:text-xl leading-relaxed">
                 And the care that started all of this doesn&apos;t stop when the
                 workday does.{" "}
                 <span className="font-bold text-terracotta">
@@ -163,27 +208,63 @@ export default function About() {
             </FadeUp>
           </div>
 
-          <div className="md:col-span-2 flex flex-col gap-3">
+          <div className="md:col-span-2 md:sticky md:top-24 -mx-6 -mb-12 px-6 py-10 bg-lavender-tint md:mx-0 md:mb-0 md:px-0 md:py-0 md:bg-transparent">
             <FadeUp>
-              <p className="font-body text-xs uppercase tracking-[0.15em] text-ink-hint mb-1">
+              <p className="font-script text-2xl text-ink md:hidden">
+                Where I focus
+              </p>
+              <p className="text-sm text-ink-muted mb-5 md:hidden">
+                Five ways the work shows up
+              </p>
+              <p className="hidden md:block font-body text-xs uppercase tracking-[0.15em] text-ink-hint mb-3">
                 Where I focus
               </p>
             </FadeUp>
-            {pillars.map((p, i) => (
-              <FadeUp key={p.title} delay={i * 0.08}>
-                <div className="flex items-start gap-3.5 p-4 border border-border rounded-md bg-white/60 hover:border-border-strong transition-colors">
-                  <div className={`w-9 h-9 rounded-sm flex items-center justify-center shrink-0 ${p.bg} ${p.fg}`}>
-                    {p.icon}
+            <PillarRow count={pillars.length + 1}>
+              {pillars.map((p, i) => (
+                <FadeUp
+                  key={p.title}
+                  delay={i * 0.08}
+                  className="min-w-[80%] snap-start md:min-w-0"
+                >
+                  <div className="flex items-start gap-3.5 p-4 h-full border border-border rounded-md bg-white md:bg-white/60 hover:border-border-strong transition-colors">
+                    <div className={`w-9 h-9 rounded-sm flex items-center justify-center shrink-0 ${p.bg} ${p.fg}`}>
+                      {p.icon}
+                    </div>
+                    <div>
+                      <p className="font-body font-bold text-sm mb-1">{p.title}</p>
+                      <p className="text-sm text-ink-muted leading-relaxed">
+                        {p.sub}
+                      </p>
+                    </div>
                   </div>
+                </FadeUp>
+              ))}
+              <FadeUp
+                delay={pillars.length * 0.08}
+                className="min-w-[80%] snap-start md:min-w-0"
+              >
+                <Link
+                  href="/projects"
+                  className="group flex items-center justify-between gap-3.5 p-4 h-full border border-border rounded-md bg-terracotta-tint hover:border-terracotta transition-colors"
+                >
                   <div>
-                    <p className="font-body font-bold text-sm mb-1">{p.title}</p>
+                    <p className="font-body font-bold text-sm mb-1 text-terracotta">
+                      See it in practice
+                    </p>
                     <p className="text-sm text-ink-muted leading-relaxed">
-                      {p.sub}
+                      The projects where this work shows up.
                     </p>
                   </div>
-                </div>
+                  <span
+                    className="text-terracotta text-xl group-hover:translate-x-1 transition-transform"
+                    aria-hidden="true"
+                  >
+                    &rarr;
+                  </span>
+                </Link>
               </FadeUp>
-            ))}
+            </PillarRow>
           </div>
         </div>
       </section>
