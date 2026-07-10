@@ -48,12 +48,20 @@ export const projects: Project[] = [
     title: "Ubuntu In Dementia Care",
     context: "Skills For Change (Non-Profit)",
     description:
-      "An 8-session program funded by the Ontario Trillium Foundation, delivered with Tropicana Community Services, supporting Black family caregivers in the GTA. I coordinated the program and all its logistics, connecting caregivers to a high-quality care home, peer support, and ongoing access to learning resources and professionals in the field. When feedback showed many caregivers were balancing work and caregiving, I helped redesign the program to be primarily virtual, keeping the care home visit in-person so families could see the space and meet staff directly, a shift that improved accessibility while preserving trust.",
+      "I coordinated Ubuntu In Dementia Care, an 8-session wellness and education program for Black family caregivers in the GTA and Scarborough. Named for the African philosophy of shared humanity, \"I am because we are,\" it gave caregivers a culturally affirming space to learn and heal together, with sessions delivered alongside a registered social worker covering dementia education, caregiver burnout, and financial, legal, and after-life planning with professionals in each field. Day to day, I supported recruitment, ran onboarding and info sessions, led participant communication, and tracked the program data behind our impact reporting.\n\nThe part I'm proudest of is what that data changed. Early feedback showed most caregivers were balancing full workdays with caregiving, so I used it to shift the program to a heavily online hybrid while keeping the care home visit in person. Attendance held steady while participation got easier for the people the program was built for.\n\nThat in-person visit was a partnership with Alexis Lodge, a Scarborough dementia care residence known for home-like, culturally attuned memory care, where caregivers could meet staff and see for themselves that culturally aligned support exists. Participants left with a peer network of Black caregivers and culturally relevant resources to lean on. I had studied the social determinants of health in my coursework; here I worked on them directly, helping close gaps in access, trust, and culturally relevant care for real families. Ubuntu In Dementia Care was funded by the Ontario Trillium Foundation and delivered with Tropicana Community Services.",
     tags: ["Program Design", "Data", "Partnerships", "Implementation", "Continuous Improvement"],
     category: "coordination",
     image: "/images/projects/ubuntu-dementia-care.jpg",
     imagePosition: "50% 50%",
-    impact: ["8-session program", "Trillium-funded", "Redesigned virtual-first"],
+    impact: [
+      "Feedback-driven hybrid redesign",
+      "Alexis Lodge care partnership",
+      "8-session caregiver program",
+      "Trillium-funded",
+    ],
+    extraImages: [
+      { src: "/images/projects/sfc-citizenship-award.jpg", label: "SFC Citizenship Award" },
+    ],
   },
   {
     slug: "camh-social-campaign",
