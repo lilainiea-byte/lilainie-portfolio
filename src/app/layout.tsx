@@ -30,7 +30,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://lilainie-portfolio.vercel.app"),
+  metadataBase: new URL("https://www.lilainie.com"),
   title: {
     default: "Lilainie Adjei-Addo — People. Systems. Impact.",
     template: "%s — Lilainie Adjei-Addo",
