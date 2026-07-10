@@ -85,6 +85,30 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "pee4pizza-sti-testing-campaign",
+    title: "Pee4Pizza: Campus STI Testing Campaign",
+    context: "McMaster Student Wellness Centre",
+    description:
+      "Getting students tested for STIs is not an information problem, it is a design problem. Pee4Pizza was the Student Wellness Centre's answer: a free, confidential STI testing day on campus, run in partnership with Hamilton Public Health, where a quick urine test for chlamydia and gonorrhea, the two most common STIs for this age group in Hamilton, came with free pizza. The design removes every barrier at once. Cost, gone. Distance, gone. Stigma, traded for a campaign name you cannot say with a straight face. What is left is the easiest possible version of a healthy decision.\n\nOf everything I worked on in two years as a Communications Assistant at the Student Wellness Centre, this campaign was a favourite. The role had me translating clinical research into plain language health promotion for a campus of 37,000+ students, working alongside the McMaster health promotion team and partnering with Hamilton Health Sciences on co-branded campaigns. For Pee4Pizza, I was tasked with creating the promotional materials: the social media flyers, stickers, and event creative that carried the campaign across campus channels, all pointing to one drop-in day where no appointment, no student ID, and no OHIP card stood between a student and a test. The campaign was picked up and cross-posted by Hamilton Public Health, and the February 2024 testing day ran out of CIBC Hall in the heart of the student centre. Both posts are linked below.\n\nThis campaign is part of why I talk about health systems the way I do. The clinic was already there. The test was already free. What made students show up was design that met them where they were, and that is the kind of work I want to keep doing.",
+    tags: ["Creative Design", "Partnerships", "Implementation"],
+    category: "coordination",
+    image: "/images/projects/pee4pizza-flyer.jpg",
+    imagePosition: "50% 50%",
+    impact: [
+      "Partnership with Hamilton Public Health",
+      "Promo materials: flyers, stickers + event creative",
+      "93% first review approval across the role",
+    ],
+    extraImages: [
+      { src: "/images/projects/pee4pizza-team-photo.jpg", label: "Team Photo" },
+      { src: "/images/projects/pee4pizza-health-promotion-assistant.jpg", label: "Lilainie and a Health Promotion Assistant" },
+    ],
+    extraLinks: [
+      { label: "Campaign Post: @mcmasterswc on Instagram", url: "https://www.instagram.com/p/C2uiDMuLcV3/" },
+      { label: "Cross-Post: Hamilton Public Health on Facebook", url: "https://www.facebook.com/HamiltonPublicHealth/posts/314933521556577/" },
+    ],
+  },
+  {
     slug: "larger-than-life",
     title: "Content & Events Strategist",
     context: "Freelance, Larger Than Life",
@@ -133,30 +157,6 @@ export const projects: Project[] = [
       { src: "/images/projects/mcmaster-yearbook-subteam-bts.jpg", label: "Sub-team BTS" },
       { src: "/images/projects/mcmaster-yearbook-raw-shot.jpg", label: "Raw Image Shot by Lilainie" },
       { src: "/images/projects/mcmaster-yearbook-edited-spread.jpg", label: "Edited Spread" },
-    ],
-  },
-  {
-    slug: "pee4pizza-sti-testing-campaign",
-    title: "Pee4Pizza: Campus STI Testing Campaign",
-    context: "McMaster Student Wellness Centre",
-    description:
-      "Getting students tested for STIs is not an information problem, it is a design problem. Pee4Pizza was the Student Wellness Centre's answer: a free, confidential STI testing day on campus, run in partnership with Hamilton Public Health, where a quick urine test for chlamydia and gonorrhea, the two most common STIs for this age group in Hamilton, came with free pizza. The design removes every barrier at once. Cost, gone. Distance, gone. Stigma, traded for a campaign name you cannot say with a straight face. What is left is the easiest possible version of a healthy decision.\n\nOf everything I worked on in two years as a Communications Assistant at the Student Wellness Centre, this campaign was a favourite. The role had me translating clinical research into plain language health promotion for a campus of 37,000+ students, working alongside the McMaster health promotion team and partnering with Hamilton Health Sciences on co-branded campaigns. For Pee4Pizza, I was tasked with creating the promotional materials: the social media flyers, stickers, and event creative that carried the campaign across campus channels, all pointing to one drop-in day where no appointment, no student ID, and no OHIP card stood between a student and a test. The campaign was picked up and cross-posted by Hamilton Public Health, and the February 2024 testing day ran out of CIBC Hall in the heart of the student centre. Both posts are linked below.\n\nThis campaign is part of why I talk about health systems the way I do. The clinic was already there. The test was already free. What made students show up was design that met them where they were, and that is the kind of work I want to keep doing.",
-    tags: ["Creative Design", "Partnerships", "Implementation"],
-    category: "coordination",
-    image: "/images/projects/pee4pizza-flyer.jpg",
-    imagePosition: "50% 50%",
-    impact: [
-      "Partnership with Hamilton Public Health",
-      "Promo materials: flyers, stickers + event creative",
-      "93% first review approval across the role",
-    ],
-    extraImages: [
-      { src: "/images/projects/pee4pizza-team-photo.jpg", label: "Team Photo" },
-      { src: "/images/projects/pee4pizza-health-promotion-assistant.jpg", label: "Lilainie and a Health Promotion Assistant" },
-    ],
-    extraLinks: [
-      { label: "Campaign Post: @mcmasterswc on Instagram", url: "https://www.instagram.com/p/C2uiDMuLcV3/" },
-      { label: "Cross-Post: Hamilton Public Health on Facebook", url: "https://www.facebook.com/HamiltonPublicHealth/posts/314933521556577/" },
     ],
   },
 ];

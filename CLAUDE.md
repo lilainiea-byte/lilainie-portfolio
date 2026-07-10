@@ -74,10 +74,10 @@ Current projects (in order):
 1. **Black Youth In STEAM** — Skills For Change, coordination
 2. **Ubuntu In Dementia Care** — Skills For Change, coordination
 3. **Concept: CAMH Social Campaign** — Personal Design, coordination (has 3 supplemental PDFs)
-4. **Content & Events Strategist** — Freelance, Larger Than Life, freelance
-5. **Intergenerational Cookbook Program** — Skills For Change, coordination
-6. **McMaster Inaugural Black Student Year Book** — BSSC, coordination
-7. **Pee4Pizza: Campus STI Testing Campaign** — McMaster Student Wellness Centre, coordination
+4. **Pee4Pizza: Campus STI Testing Campaign** — McMaster Student Wellness Centre, coordination
+5. **Content & Events Strategist** — Freelance, Larger Than Life, freelance
+6. **Intergenerational Cookbook Program** — Skills For Change, coordination
+7. **McMaster Inaugural Black Student Year Book** — BSSC, coordination
 
 ## Static assets
 
