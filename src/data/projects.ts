@@ -68,12 +68,16 @@ export const projects: Project[] = [
     title: "Concept: CAMH Social Campaign",
     context: "Personal Design",
     description:
-      "My take on a CAMH social media campaign tailored towards an event, complete with a content plan and media sample.",
-    tags: ["Creative Work", "Implementation"],
+      "There's a social media trend where every group chat has \"the girl with the list,\" the friend keeping a notes-app list of every pregnancy symptom nobody warns you about, shared woman to woman whenever someone's expecting. This is my unaffiliated concept for how CAMH's womenmind community could fill a virtual seminar on pregnancy and women's brain health, built on the real research of CAMH neuroscientist Dr. Liisa Galea. The campaign starts from that familiar pregnancy list that rocked the internet, then walks people into what the science actually says.\n\nThe package works like a real rollout. A communications plan sets the audience, message, and channel strategy, and three designed posts carry it: an Instagram and LinkedIn carousel that answers the list with notes-app cards of actual neuroscience, an event flyer built from the list itself, and a scripted short-form reel anchored on one stat, that only 3% of neuroscience studies have ever focused on the female brain. My science background did the translating; the internet did the hook. All three pieces are in the media below.",
+    tags: ["Creative Design", "Implementation"],
     category: "coordination",
     image: "/images/projects/camh-social-campaign.png",
     imagePosition: "50% 50%",
-    impact: ["Concept campaign", "Full comms plan", "3 media samples"],
+    impact: [
+      "Science communication concept",
+      "Comms plan + 3-post rollout",
+      "Designed and written solo",
+    ],
     extraFiles: [
       { label: "Carousel Post: Before You Call The Girl With The List", url: "/files/projects/camh-carousel-post1.pdf" },
       { label: "Communications & Social Media Plan", url: "/files/projects/camh-comms-plan.pdf" },
