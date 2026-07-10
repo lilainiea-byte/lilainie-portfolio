@@ -102,16 +102,20 @@ export const projects: Project[] = [
   },
   {
     slug: "intergenerational-cookbook-program",
-    title: "Intergenerational Cook Book Program",
+    title: "Intergenerational Cookbook Program",
     context: "Skills For Change (Non-Profit)",
     description:
-      "The Intergenerational Cook Book Program was designed to build meaningful connections and celebrate the rich culinary traditions in Black Communities. Over the course of 8 exciting sessions, seniors (55+) and youth came together to create a collaborative cookbook zine celebrating food, history, and community! Program logistics and data tracking were coordinated by myself and another program facilitator. E-book illustrated by myself.",
+      "Food is how culture survives, and this program turned that into a working classroom. Over 8 hybrid sessions, the Intergenerational Cookbook Program brought Black youth and seniors together around African and African Diaspora foodways: in-person cooking sessions at Tropicana Community Services in Scarborough, storytelling circles, community outings to local markets, and food justice conversations. Seniors passed down culinary heritage and youth carried it forward, while I coordinated program logistics and the data tracking behind our impact reporting alongside another program facilitator.\n\nThe program culminated in a collaborative cookbook zine of recipes, stories, and food history. Participants created and submitted their recipes; I designed and illustrated the entire e-book in Canva. The program was funded by the Ontario Ministry for Seniors and Accessibility and delivered with Tropicana Community Services. The book is linked below.",
     tags: ["Creative Design", "Partnerships", "Implementation", "Continuous Improvement"],
     category: "coordination",
     image: "/images/projects/intergenerational-cookbook-program.png",
     imagePosition: "50% 50%",
     link: "https://simplebooklet.com/sfclilainie#page=1",
-    impact: ["8 sessions", "Published e-book zine", "Self-illustrated"],
+    impact: [
+      "Designed + illustrated the zine",
+      "8 hybrid sessions",
+      "Recipes from participants",
+    ],
   },
   {
     slug: "mcmaster-black-yearbook",
