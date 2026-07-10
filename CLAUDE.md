@@ -75,9 +75,10 @@ Current projects (in order):
 2. **Ubuntu In Dementia Care** — Skills For Change, coordination
 3. **Concept: CAMH Social Campaign** — Personal Design, coordination (has 3 supplemental PDFs)
 4. **Pee4Pizza: Campus STI Testing Campaign** — McMaster Student Wellness Centre, coordination
-5. **Content & Events Strategist** — Freelance, Larger Than Life, freelance
-6. **Intergenerational Cookbook Program** — Skills For Change, coordination
-7. **McMaster Inaugural Black Student Year Book** — BSSC, coordination
+5. **The McMaster Community Fridge** — McMaster Student Wellness Centre, coordination
+6. **Content & Events Strategist** — Freelance, Larger Than Life, freelance
+7. **Intergenerational Cookbook Program** — Skills For Change, coordination
+8. **McMaster Inaugural Black Student Year Book** — BSSC, coordination
 
 ## Static assets
 

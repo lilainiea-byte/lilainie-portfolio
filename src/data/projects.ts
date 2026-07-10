@@ -109,6 +109,27 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "mcmaster-community-fridge",
+    title: "The McMaster Community Fridge",
+    context: "McMaster Student Wellness Centre",
+    description:
+      "Behind Mills Library on McMaster's campus sat a fridge, a freezer, and a pantry that asked no questions. The McMaster Community Fridge provided free, accessible food and essential products to anyone who needed them, 24 hours a day, seven days a week. You took what you needed or left what you could, anonymously. No forms, no ID, no proof of need. Stocked through donations with fresh produce, unopened packaged meals, canned goods, personal hygiene products, and even pet food, it was mutual aid in its simplest form: support placed where people already were, with dignity built into the design.\n\nDuring my time at the Student Wellness Centre, I supported the fridge by documenting content and promoting the project, keeping it visible on campus and to the wider Hamilton community. I also occasionally pitched in with the health promotion team on restocking donated items, which came with the practical side of community food safety: fresh and sealed goods in, raw meat, homemade meals, and expired items out.\n\nThe fridge no longer operates, but it served many students during its time and supported them while they navigated their academic careers. This project was never abstract for me. I studied the social determinants of health, the conditions people are born into, live in, and study under that shape their wellbeing long before a clinic ever gets involved, and food security sits near the top of that list. A student who does not know where their next meal is coming from carries that into every lecture, every exam, every deadline. Food scarcity works quietly, showing up as slipping grades, strained mental health, and isolation long before it ever shows up in a health record. The fridge answered that determinant directly: it put food within reach, upstream of the crisis, without asking anyone to prove they were struggling. I personally knew students who benefited from it. That is what accessible design looks like when it is real, and it is why this project held a special place in my heart.",
+    tags: ["Creative Design", "Partnerships", "Implementation"],
+    category: "coordination",
+    image: "/images/projects/mcmaster-community-fridge.jpg",
+    imagePosition: "50% 50%",
+    impact: [
+      "Served the campus 24/7, fully anonymous",
+      "Fridge, freezer + pantry behind Mills Library",
+      "Campus and Hamilton community visibility",
+    ],
+    extraLinks: [
+      { label: "McMaster News: Meet McMaster's Community Fridge", url: "https://news.mcmaster.ca/meet-mcmasters-community-fridge/" },
+      { label: "Instagram: @mcmastercommunityfridge", url: "https://www.instagram.com/mcmastercommunityfridge/" },
+      { label: "Video: 60 Seconds, McMaster Community Fridge", url: "https://www.youtube.com/watch?v=kMgKbi5HYvU" },
+    ],
+  },
+  {
     slug: "larger-than-life",
     title: "Content & Events Strategist",
     context: "Freelance, Larger Than Life",
