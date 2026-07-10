@@ -26,12 +26,22 @@ export const projects: Project[] = [
     title: "Black Youth In STEAM",
     context: "Skills For Change (Non-Profit)",
     description:
-      "As Youth Community Worker, I worked on this Ontario Ministry of Citizenship and Multiculturalism funded program delivered in partnership with York University, Centennial College, Tropicana Community Services, Urban Pilots Network, Toronto Symphony Orchestra, Art Gallery of Ontario, and Young People's Theatre. I co-designed and coordinated 4 cohorts of a STEM-focused workshop and mentorship series for Black youth ages 14 to 18. I led outreach efforts that doubled program sign-up rates, increased client retention, and promoted client referrals. The program's impact was recognized through a Youth Leadership Award, with the nomination written by a participant who benefited from the exposure the program provided them.",
+      "I coordinated Black Youth In STEAM, a free 7-week hybrid program giving Black youth ages 14 to 18 hands-on exposure to STEM careers, from flight simulation and suturing to Micro:Bit coding. I ran it end to end across four cohorts of 25: recruitment, onboarding, parent and youth communication, logistics, and on-the-ground support at every virtual session, in-person workshop, and partner field trip. I also built the systems underneath it: intake forms redesigned to be accessible and efficient, onboarding materials for info sessions, attendance tracking forms, and the program data I maintained for reporting throughout.\n\nWhen I took over outreach, applications grew from around 20 to over 60 per cohort, filling every seat with a waitlist behind it, and roughly 85% of accepted youth completed the program. In the 2024-25 program year, 100% of participants reported being on track to graduate, 96% left motivated to pursue STEM, and 89% said they felt a sense of belonging in STEM spaces.\n\nI used participant surveys to keep the program honest, tailoring sessions to what youth said they needed and pitching improvements to my manager. That's how I created \"The Science of Social Media,\" a new workshop on branding and pitching yourself on platforms like LinkedIn that became part of the curriculum. Graduates joined an alumni network with curated resources and mentor connections. Funded by the Ontario Ministry of Citizenship and Multiculturalism and delivered with York University, Centennial College, Tropicana Community Services, Urban Pilots Network, the Toronto Symphony Orchestra, the AGO, and Young People's Theatre, the program's impact was recognized with a Youth Leadership Award, nominated by a participant.",
     tags: ["Program Design", "Data", "Partnerships", "Implementation", "Continuous Improvement"],
     category: "coordination",
     image: "/images/projects/black-youth-in-steam-banner.png",
     imagePosition: "50% 50%",
-    impact: ["4 cohorts delivered", "2× sign-up rate", "Youth Leadership Award"],
+    impact: [
+      "96% motivated to pursue STEM",
+      "Applications tripled (20 → 60+)",
+      "100% on track to graduate",
+      "~85% completion across 4 cohorts",
+      "Youth Leadership Award",
+    ],
+    extraImages: [
+      { src: "/images/projects/byis-award-ceremony.jpg", label: "Youth Leadership Award Ceremony" },
+      { src: "/images/projects/byis-youth-leadership-award.jpg", label: "Youth Leadership Award" },
+    ],
   },
   {
     slug: "ubuntu-dementia-care",

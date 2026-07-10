@@ -184,7 +184,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                   ))}
                 </div>
               ) : null}
-              <p className="text-sm text-ink-muted leading-relaxed mb-6">{project.description}</p>
+              <p className="text-sm text-ink-muted leading-relaxed mb-6 whitespace-pre-line">{project.description}</p>
 
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map((tag) => (
