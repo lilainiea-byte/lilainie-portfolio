@@ -31,7 +31,7 @@ const contactLinks = [
     ),
   },
   {
-    label: "LTL Growth Dashboard (Live Stats)",
+    label: "My Social Dashboard",
     href: "https://app.trainingground.ai/mk/Lilainie",
     external: true,
     icon: (
