@@ -41,7 +41,9 @@ export default function Nav() {
           ))}
           <Link
             href="/contact"
-            className="font-body text-sm font-bold uppercase tracking-wide px-5 py-2.5 bg-ink text-cream rounded-sm hover:opacity-80 transition-opacity"
+            className={`font-body text-sm font-bold uppercase tracking-wide px-5 py-2.5 text-cream rounded-sm hover:opacity-80 transition-opacity ${
+              pathname === "/contact" ? "bg-terracotta" : "bg-ink"
+            }`}
           >
             Let&apos;s connect
           </Link>
@@ -77,7 +79,9 @@ export default function Nav() {
           <Link
             href="/contact"
             onClick={() => setOpen(false)}
-            className="font-body text-sm font-bold uppercase tracking-wide px-5 py-2.5 bg-ink text-cream rounded-sm w-fit"
+            className={`font-body text-sm font-bold uppercase tracking-wide px-5 py-2.5 text-cream rounded-sm w-fit ${
+              pathname === "/contact" ? "bg-terracotta" : "bg-ink"
+            }`}
           >
             Let&apos;s connect
           </Link>
